@@ -1,0 +1,53 @@
+{% extends 'base.html'%}
+
+{%load static%}
+
+{%block content%}
+
+
+
+  <!-- contact section -->
+  <section class="contact_section layout_padding">
+    <div class="container">
+      <div class="heading_container">
+        <h2>
+          Contact Us
+        </h2>
+      </div>
+      <div class="row">
+        <div class="col-md-6">
+          <div class="form_container">
+            <form action="" method="post" enctype="multipart/form-data">
+              <div>
+                {%csrf_token%}
+              {{forms.as_ul}}
+              <div class="btn_box">
+                <button>
+                  SEND
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+        <div class="col-md-6 ">
+          <div class="map_container">
+            <div class="map">
+              <div id="googleMap"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- end contact section -->
+
+
+  <!-- info section -->
+  
+  <!-- end info_section -->
+
+  <!-- footer section -->
+{%endblock content%}
+</body>
+
+</html>
