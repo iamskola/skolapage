@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-*ld$o54+jopi6%$!^&@12#3rmvi64*vdwkrvjwd8&88=l5sj_k
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['skolapage-1.onrender.com', '127.0.0.1', 'localhost']
 
 
 # Application definition
@@ -144,7 +144,7 @@ MEDIA_ROOT=BASE_DIR/'mediafiles'
 # https://docs.djangoproject.com/en/4.2/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
-DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
 
 #Email configuration
 EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
